@@ -1,11 +1,3 @@
-// Sudo Code
-// linear_search(arr: array, target)
-// iterate through array
-// if target is found return index of target
-// else return None
-//
-// O(N)
-
 // Simplest form to work with integers
 pub fn linear_search_ints(arr: &[i32], target: &i32) -> Option<usize> {}
 
