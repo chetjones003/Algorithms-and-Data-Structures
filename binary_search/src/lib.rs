@@ -1,15 +1,3 @@
-// Sudo Code
-// mid = lo + (hi - lo) / 2
-// val = arr[mid]
-// while lo <= high
-//  if val = target
-//      return index(target)
-//  if val < target
-//      low =  mid + 1
-//  if val > target
-//      hi = mid - 1
-// return None
-
 pub fn binary_search(arr: &[usize], target: &usize) -> Option<usize> {}
 
 #[cfg(test)]
