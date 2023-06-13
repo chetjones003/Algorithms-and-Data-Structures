@@ -7,50 +7,16 @@
 // O(N)
 
 // Simplest form to work with integers
-pub fn linear_search_ints(arr: &[i32], target: &i32) -> Option<usize> {
-    let mut index: usize = 0;
-    for item in arr {
-        if item == target {
-            return Some(index);
-        }
-        index += 1
-    }
-    None
-}
+pub fn linear_search_ints(arr: &[i32], target: &i32) -> Option<usize> {}
 
 // Another version to search chars
-pub fn linear_search_chars(arr: &[char], target: &char) -> Option<usize> {
-    let mut index: usize = 0;
-    for item in arr {
-        if item == target {
-            return Some(index);
-        }
-        index += 1
-    }
-    None
-}
+pub fn linear_search_chars(arr: &[char], target: &char) -> Option<usize> {}
 
 // Another version to search strings
-pub fn linear_search_strings(arr: &[String], target: &str) -> Option<usize> {
-    let mut index: usize = 0;
-    for item in arr {
-        if item == target {
-            return Some(index);
-        }
-        index += 1
-    }
-    None
-}
+pub fn linear_search_strings(arr: &[String], target: &str) -> Option<usize> {}
 
 // Implementing a generic version
-pub fn linear_search<T: PartialEq>(arr: &[T], target: &T) -> Option<usize> {
-    for (index, item) in arr.iter().enumerate() {
-        if item == target {
-            return Some(index);
-        }
-    }
-    None
-}
+pub fn linear_search<T: PartialEq>(arr: &[T], target: &T) -> Option<usize> {}
 
 #[cfg(test)]
 mod test {
