@@ -10,7 +10,7 @@
 //      hi = mid - 1
 // return None
 
-pub fn binary_search(arr: &[i32], target: &i32) -> Option<usize> {}
+pub fn binary_search(arr: &[usize], target: &usize) -> Option<usize> {}
 
 #[cfg(test)]
 mod tests {
