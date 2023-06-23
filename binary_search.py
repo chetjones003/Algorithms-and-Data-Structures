@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
-from typing import List
+from typing import List, Optional
 
 
-def binary_search(arr: List, target: int) -> int:
+def binary_search(arr: List[int], target: int) -> Optional[int]:
     low: int = 0
     high: int = len(arr) - 1
 
@@ -18,7 +18,7 @@ def binary_search(arr: List, target: int) -> int:
         elif value < target:
             low = midpoint + 1
 
-    return -1
+    return None
 
 
 def test_when_found():
@@ -28,5 +28,5 @@ def test_when_found():
 
 
 def test_when_not_found():
-    assert binary_search([1,2,3,4], 0) == -1
-    assert binary_search([1,2,3,4], 5) == -1
+    assert binary_search([1,2,3,4], 0) == None
+    assert binary_search([1,2,3,4], 5) == None
