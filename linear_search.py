@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 
-from typing import List
+from typing import List, Optional
 
 
-def linear_search(arr: List[int], target: int) -> int:
-    for i in range(len(arr)):
-        if arr[i] == target:
-            return i
+def linear_search(arr: List[int], target: int) -> Optional[int]:
+    for index, item in enumerate(arr):
+        if item == target:
+            return index
 
-    return -1
+    return None
 
 
 def test_when_is_found():
@@ -18,5 +18,5 @@ def test_when_is_found():
     assert linear_search([1,2,3,4], 4) == 3
 
 def test_when_not_found():
-    assert linear_search([1,2,3,4], 0) == -1
-    assert linear_search([1,2,3,4], 5) == -1
+    assert linear_search([1,2,3,4], 0) == None
+    assert linear_search([1,2,3,4], 5) == None
