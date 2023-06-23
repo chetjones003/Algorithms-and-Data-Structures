@@ -1,4 +1,4 @@
-#+title: Algorithms in Rust
+#+title: Algorithms and Data Structures
 #+author: Chet Jones
 
 * Intro
@@ -29,17 +29,11 @@ Steps in a linear search:
 3. If no element is found equal to the key, the search returns None
 
 Example with integers:
-#+begin_src rust
-fn linear_search(arr: &[i32], target: &i32) -> Option<usize> {
-    let mut index: usize = 0;
-    for item in arr {
-        if item == target {
-            return Some(index)
-        }
-        index += 1
-    }
-    None
-}
+#+begin_src python
+def linear_search(arr: List[int], target: int) -> int:
+    # loop through array -> i in range(len(arr))
+    # if i == target return i
+    # else return -1
 #+end_src
 
 * Binary Search
