@@ -3,13 +3,11 @@
 from typing import List
 
 
-def linear_search(arr: List[int], target: int):
+def linear_search(arr: List[int], target: int) -> int:
     for i in range(len(arr)):
         if arr[i] == target:
-            print(i)
             return i
 
-    print("did not find")
     return -1
 
 
