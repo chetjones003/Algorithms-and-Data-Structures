@@ -1,4 +1,3 @@
-
 # Intro
 
 This document serves as a descriptions of all algorithms contained in this 
@@ -49,7 +48,7 @@ index of that element is returned
 
 Example with integers:
 ``` python
-def linear_search(arr: List[int], target: int) -> int:
+def linear_search(arr: List[int], target: int) -> Optional[int]:
     # loop through array -> i in range(len(arr))
     # if i == target return i
     # else return -1
@@ -60,3 +59,44 @@ Binary Search is defined as a searching algorithm used in a sorted array by
 repeatedly dividing the search interval in half. The idea of binary search is 
 to use the information that the array is sorted and reduce the time 
 complexity to O(log(N)).
+
+![from geeksforgeeks](images/BinarySearch.png)
+
+Iterative approach
+``` python
+def binary_search(arr: List[int], target: int) -> Optional[int]
+    # 1. Compare target with middle element
+
+    # 2. if x matches with the middle element -> return 
+    #    middle index
+
+    # 3. if x is greater than the middle element, then x 
+    #    can only be in the remaining right half after 
+    #    the middle element. Then apply the algorithm again
+
+    # 4. if x is smaller than the middle element, then x can 
+    #    only be in the remaining left half before the middle 
+    #    element. Then apply the algoritm again
+```
+
+## Advantages of Binary Search:
+* Binary search is faster than linear search, especially for large arrays.
+* More efficient than other searching algorithms with a similar time 
+  complexity, such as interpolation search or exponential search.
+* Binary search is well-suited for searching large datasets that 
+  are stored in external memory, such as on a hard drive or in the cloud.
+
+## Drawbacks of Binary Search:
+* The array should be sorted.
+* Binary search requires that the data structure being searched be 
+  stored in contiguous memory locations. 
+* Binary search requires that the elements of the array be comparable, 
+  meaning that they must be able to be ordered.
+
+## Applications of Binary Search:
+* Binary search can be used as a building block for more complex 
+  algorithms used in machine learning, such as algorithms for training 
+  neural networks or finding the optimal hyperparameters for a model.
+* It can be used for searching in computer graphics such as algorithms 
+  for ray tracing or texture mapping.
+* It can be used for searching a database.
