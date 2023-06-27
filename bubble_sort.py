@@ -1,7 +1,7 @@
-from typing import List, Optional
+from typing import List
 
 
-def bubble_sort(arr: List[int]) -> Optional[List[int]]:
+def bubble_sort(arr: List[int]):
     swapped: bool = False
 
     if len(arr) == 0:
